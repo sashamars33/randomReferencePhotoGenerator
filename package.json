@@ -1,0 +1,18 @@
+{
+  "name": "referencephotogenerator",
+  "version": "1.0.0",
+  "description": "Photo generator as referneces for drawing and painting",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "\"Sasha Marshall\"",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
