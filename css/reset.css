@@ -59,10 +59,57 @@ table {
 img {
 	width: 100%;
 }
+body{
+	margin: 2% 15%;
+	background: #b6b6b6;
+}
+html{
+	font-size: 62.5%;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.flex{
+	display: flex;
+}
+
+
+
+/* ---------- Main CSS --------*/
+
+
+
 h1 {
 	text-align: center;
-	font-size: 40px;
+	font-size: 4rem;
+	padding: 1%;
 }
-h1:hover {
+#btn:hover {
+	cursor: pointer;
+	background: #00000090;
+}
+p {
+	text-align: center;
+	font-size: 2rem;
+	margin: 5% 20%;
+}
+p:nth-of-type(2){
+	padding: 2%;
+	margin: 2% 0;
+	background: black;
+	color: white;
+	border-radius: 5px;
+}
+img{
+	margin: auto;
+	border-radius: 5px;
+	filter: saturate(100%);
+}
+ul{
+	flex-flow: row wrap;
+	font-size: 1.5rem;
+	width: 100%;
+	justify-content: space-evenly;
+	padding: 2% 0; 
+}
+ul li:hover {
 	cursor: pointer;
 }

@@ -2,17 +2,42 @@ document.querySelector("#btn").addEventListener('click', makeReq);
 
 
 async function makeReq() {
-    const res = await fetch(`api/images/3`);
+    const imgNum = Math.round(Math.random()*124)
+    const res = await fetch(`api/images/${imgNum}`);
     const data = await res.json();
 
     console.log(data.imgUrl);
     document.querySelector("#img").src = data.imgUrl;
 };
 
-function alt(){
-    console.log('shits working');
-}
 
+const image = document.querySelector('img');
+
+
+    function saturate(){
+        console.log("saturation 150%");
+        image.style.filter = "saturate(200%)";
+    }
+    function desaturate(){
+        console.log("saturation 50%");
+        image.style.filter = "saturate(50%)";
+    }
+    function monochrome(){
+        console.log("saturation 0%");
+        image.style.filter = "saturate(0%)";
+    }
+    function revertToOriginal(){
+        console.log('saturation 100%');
+        image.style.filter = "saturate(100%)"
+    }
+
+document.querySelector('#sat').addEventListener('click', saturate);
+
+document.querySelector('#desat').addEventListener('click', desaturate);
+
+document.querySelector('#satzero').addEventListener('click', monochrome);
+
+document.querySelector('#revert').addEventListener('click', revertToOriginal);
 
 // document.querySelector('#clickMe').addEventListener('click', makeReq)
 
