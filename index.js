@@ -3,6 +3,8 @@ const path = require("path");
 const fs = require('fs');
 const { getImages, getImage, createImage, updateImage, deleteImage  } = require('./controllers/infoController');
 
+
+
 const server = http.createServer((req,res) => {
   console.log(req.url);
   if(req.url === '/api/images' && req.method === 'GET'){
