@@ -14,6 +14,7 @@ async function makeReq() {
 const image = document.querySelector('img');
 
 
+
     function saturate(){
         console.log("saturation 150%");
         image.style.filter = "saturate(200%)";
@@ -39,7 +40,7 @@ document.querySelector('#satzero').addEventListener('click', monochrome);
 
 document.querySelector('#revert').addEventListener('click', revertToOriginal);
 
-// document.querySelector('#clickMe').addEventListener('click', makeReq)
+document.querySelector('#clickMe').addEventListener('click', makeReq)
 
 // async function makeReq(){
 
